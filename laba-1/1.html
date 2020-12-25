@@ -169,14 +169,15 @@ Suspendisse scelerisque at felis vitae viverra. Sed mollis suscipit aliquet. Aen
 <button>OK</button><br>
 <h3>Регистрация</h3>
 <strong>Пол</strong>
-<p><input type="radio" name="a" value="Муж"></p>
-<p><input type="radio" name="a" value="Жен"></p>
-<input required type="text"  minlength="3"> Имя <br>
-<input required type="text"  minlength="3"> Фамилия <br>
+<form>
+<label><input type="radio" name="a" id='chep'value="Муж" >Муж</label>
+<label><input type="radio" name="a" id='chep'value="Жен" >Жен</label> <br>
+<input required="required" name="k" type="text"  minlength="3"> Имя <br>
+<input required="required" type="text"  minlength="3"> Фамилия <br>
 <input type="text" minlength="3"> Отчество <br>
-<input  required type="number">Возраст<br>
-<input required type="email" placeholder="example@test.com" >E-mail<br>
-<input required type="tel" placeholder="7(9xx)-xxx-xx-xx" >Телефон<br>
+<input  required="required" type="number">Возраст<br>
+<input required="required" type="email" placeholder="example@test.com" >E-mail<br>
+<input required="required" type="tel" placeholder="7(9xx)-xxx-xx-xx" >Телефон<br>
 <select>
   <option>1 группа</option>
   <option>2 группа</option>
@@ -185,13 +186,14 @@ Suspendisse scelerisque at felis vitae viverra. Sed mollis suscipit aliquet. Aen
 <input type="password" required>Введите пароль<br>
 <input type="password" required>Повторите пароль<br>
 <input type="checkbox">Учусь платно<br>
-<button>Зарегистрироваться</button><br>
-
+<input type="submit" value="Зарегистрироваться" onclick="che()"><br>
+</form>
  <video width="700" controls>
   <source src="bou" type="video/mp4">
 </video> <br>
 <audio controls>
  <source src="zvuk" type="audio/mpeg" >
 </audio>
+
 </body>
 </html>
